@@ -13,9 +13,9 @@ git submodule update
 
 Install the needed runtime and SDK:        
 ```
-flatpak remote-add --user --from gnome https://sdk.gnome.org/gnome.flatpakrepo       
-flatpak install --user --from gnome org.freedesktop.Sdk 1.4      
-flatpak install --user --from gnome org.freedesktop.Platform 1.4          
+flatpak remote-add --user --if-not-exists --from gnome https://sdk.gnome.org/gnome.flatpakrepo       
+flatpak install --user gnome org.freedesktop.Sdk 1.4      
+flatpak install --user gnome org.freedesktop.Platform 1.4          
 ```
 Place an archive of version 1.5.13 of the game into the directory.     
 Then run `make`. This will create a `.flatpak` file in the directory, which contains the game.     
