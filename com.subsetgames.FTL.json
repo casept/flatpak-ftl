@@ -21,10 +21,7 @@
   ],
 
   "modules": [
-    /* We use our own compiled-from-source libs whenever possible */
     "modules/fribidi-0.19.7.json",
-    "modules/libdevil-1.7.8.json",
-    "modules/libsdl-1.2.15.json",
     "modules/glu-9.0.0.json",
     {
       "name": "ftl",
@@ -40,17 +37,13 @@
         },
         {
           "type": "file",
-          "path": "FTL.desktop"
+          "path": "com.subsetgames.FTL.desktop"
         },
         {
           "type": "patch",
           "path": "FTL.patch"
         }
-       ],
-      "cleanup": [
-        "/FTL/data/x86/lib",
-        "/FTL/data/x64/lib"
-      ]
+       ]
     }
   ]
 }
