@@ -3,7 +3,7 @@
   "runtime": "org.freedesktop.Platform",
   "runtime-version": "1.4",
   "sdk": "org.freedesktop.Sdk",
-  "version": "0.9.6",
+  "version": "1.5.13",
   "command": "/app/FTL/FTL",
   "finish-args": [
       /* X11 access */
