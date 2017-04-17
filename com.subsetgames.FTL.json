@@ -1,0 +1,56 @@
+{
+  "app-id": "com.subsetgames.FTL",
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "1.4",
+  "sdk": "org.freedesktop.Sdk",
+  "version": "0.9.6",
+  "command": "/app/FTL/FTL",
+  "finish-args": [
+      /* X11 access */
+      "--socket=x11", "--share=ipc",
+      /* OpenGL access */
+      "--device=dri",
+      /* PulseAudio access */
+      "--socket=pulseaudio",
+      /* Network access */
+      "--share=network",
+      /* Wayland access */
+      "--socket=wayland",
+      /* Savegames */
+      "--persist=~/.local/share/FasterThanLight"
+  ],
+
+  "modules": [
+    /* We use our own compiled-from-source libs whenever possible */
+    "modules/fribidi-0.19.7.json",
+    "modules/libdevil-1.7.8.json",
+    "modules/libsdl-1.2.15.json",
+    "modules/glu-9.0.0.json",
+    {
+      "name": "ftl",
+      "buildsystem": "simple",
+      "build-commands": [
+	"mkdir -p /app/FTL",
+	"cp -r * /app/FTL/"
+      ], 
+      "sources" : [
+        {
+          "type": "archive",
+          "path": "FTL Faster Than Light 1_5_13.tar.lzma"
+        },
+        {
+          "type": "file",
+          "path": "FTL.desktop"
+        },
+        {
+          "type": "patch",
+          "path": "FTL.patch"
+        }
+       ],
+      "cleanup": [
+        "/FTL/data/x86/lib",
+        "/FTL/data/x64/lib"
+      ]
+    }
+  ]
+}

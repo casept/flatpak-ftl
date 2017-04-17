@@ -1,0 +1,12 @@
+diff -Naur FTL1/FTL FTL2/FTL
+--- FTL1/FTL	2017-04-17 13:32:06.660656730 +0200
++++ FTL2/FTL	2017-04-17 13:32:15.960784767 +0200
+@@ -1,7 +1,7 @@
+ #!/bin/bash
+ 
+ # enter the game directory
+-cd ./data
++cd /app/FTL/data
+ 
+ 
+ # run FTL
