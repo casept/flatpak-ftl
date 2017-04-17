@@ -2,3 +2,4 @@ FTL*.tar*
 *.flatpak
 FTL/
 .flatpak-builder/
+repo/
