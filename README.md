@@ -24,8 +24,7 @@ Then run `make`. This will create a `.flatpak` file in the directory, which cont
 Just run `make install`. This will install the game for your local user.     
 
 ## Running        
-The .desktop file is currently not working (contributors welcome!). For now, run `flatpak run com.subsetgames.FTL` to launch the game.     
+A desktop entry for the game should have been added. If it hasn't, log out and back in. If it still doesn't work, run `flatpak run com.subsetgames.FTL` to launch the game.     
 
 ## TODO      
-[ ] Fix .desktop file      
-[ ] Use our own open source libs instead of the ones bundled w/ the game
+* Use our own open source libs instead of the ones bundled w/ the game

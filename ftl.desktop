@@ -2,8 +2,8 @@
 Name=FTL: Faster Than Light
 GenericName=FTL: Faster Than Light
 Comment=A spaceship simulation real-time roguelike-like
-Exec=ftl &u
-Icon=com.subsetgames.FTL
+Exec=ftl
+Icon=ftl
 Terminal=false
 Type=Application
 Categories=Game;
