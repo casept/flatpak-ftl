@@ -14,8 +14,6 @@
       "--device=dri",
       /* PulseAudio access */
       "--socket=pulseaudio",
-      /* Network access */
-      "--share=network",
       /* Wayland access */
       "--socket=wayland",
       /* Savegames */
